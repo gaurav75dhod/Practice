@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: gold;
+            border: 2px solid black;
+            box-shadow: black 2px 2px 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .large{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        @media(max-width:1400px){
+            .box{
+                background-color: hotpink;
+                color: white;
+            }
+        }
+        @media(max-width:1000px){
+            .box{
+                background-color:lime;
+                color: black;
+            }
+        }
+        @media(max-width:600px){
+            .box{
+                background-color:orange;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="large">
+        <div class="box">1</div>
+    </div>
+</body>
+</html>

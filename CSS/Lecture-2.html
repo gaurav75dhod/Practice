@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+            padding: 1%;
+            margin: 2.5%;
+        }
+        .one{
+            transform: rotate(20deg);
+        }
+        .two{
+            transform: scale(1.2);
+        }
+        .three{
+            transform: skew(20deg);
+        }
+        .four{
+            transform: translate(20px);
+        }
+        .five{
+            transform: translate(50px) rotate(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <div class="five">Five</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Loops & Strings</title>
+</head>
+<body>
+    <h2>Javascript Loops</h2>
+    <script>
+        // for loop
+        for (let i=1; i<=5; i++) {
+            console.log("Javascript");
+        }
+
+        for (let i=1; i<=10; i++) {
+            console.log(i);
+        }
+
+        // while loop
+        let i = 1;
+        while (i<=5) {
+            console.log("MS DHONI");
+            i++
+        }
+
+        //do-while loop
+        // let j = 1
+        // do {
+        //     console.log("Javascript");
+        //     i++;
+        // } while (j<=2);
+
+        // for of loop works with strings and arrays
+        let a = "Rohit Sharma"
+        for (let i of a) {
+            console.log(i);
+        }
+
+        // for in loop works with objects and arrays
+        let object={
+            Name: "Apple",
+            Color: "Red",
+            Piece: 2
+        }
+        for (let key in object) {
+            console.log(key, object[key]);
+        }
+
+        // Strings - immutable
+        let str = "Rohit"
+        console.log(str.length);
+        console.log(str[0]);
+        console.log(str[1]);
+        console.log(str[2]);
+        console.log(str[3]);
+        console.log(str[4]);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        let str1 = "Sharma";
+        console.log(str.concat(str1));
+    </script>
+</body>
+</html>

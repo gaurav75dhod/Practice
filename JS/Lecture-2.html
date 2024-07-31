@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators & Conditional statements</title>
+</head>
+<body>
+    <h2>Javascript Operators</h2>
+    <script>
+        let a = 20;
+        let b = 10;
+        console.log("20 + 10 = ", a+b);
+        console.log("20 - 10 = ", a-b);
+        console.log("20 * 10 = ", a*b);
+        console.log("20 / 10 = ", a/b);
+        // gives the quotient value
+        console.log("20 % 10 = ", a%b);
+        // gives the remainder value 
+        console.log("20 ** 10 = ", a**b);
+        console.log("20 + 1 =", ++a);
+        console.log("10 - 1 =", --b);
+
+        let c = 30;
+        let d = 40;
+        console.log("c===d", c===d);
+        console.log("c!==d", c!==d);
+        console.log("c>d", c>d);
+        console.log("c<d", c<d);
+        console.log("Logical and", c!==d && c<d);
+        // In logical and both values should be true then it will give true otherwise if one statement gives false then answer will be false
+        console.log("Logical or", c===d || c!==d);
+        // In logical or both values should be true then it will give true otherwise if one statement gives false then answer will be true
+        console.log("Logical not", !(c!==d));
+        // In logical not if value is true then it converts into false and vice-versa
+    </script>
+</body>
+</html>

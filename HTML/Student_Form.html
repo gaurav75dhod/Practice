@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 250%;
+            margin-top: 2%;
+            margin-bottom: 3%;
+            animation-name: heading;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            letter-spacing: 2px;
+        }
+        .box{
+            margin-left: 40.5%;
+            border: 2px solid white;
+            display: inline-block;
+            padding: 2%;
+            box-shadow: 5px 5px 5px white;
+        }
+        input{
+            font-size: large;
+            padding: 2%;
+            color: white;
+        }
+        label{
+            font-size: x-large;
+            color: white;
+            font-weight: 800;
+        }
+        b{
+            color: white;
+            font-weight: lighter;
+        }
+        button{
+            font-size: x-large;
+            padding: 1%;
+            background-color: white;
+        }
+        select{
+            font-size: large;
+        }
+        @keyframes heading{
+            0%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            100%{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Student Form</h1></header>
+    <main>
+        <div class="box">
+            <form>
+                <label for="name">Username:</label>
+                <br>
+                <br>
+                <input type="text" id="name">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <br>
+                <input type="password" id="password">
+                <br>
+                <br>
+                <label for="">Gender:</label>
+                <br>
+                <br>
+                <input type="radio" name="gender" value="Male"> <b>Male</b>
+                <input type="radio" name="gender" value="Female"> <b>Female</b>
+                <br>
+                <br>
+                <label for="">Favourite Sports:</label>
+                <br>
+                <br>
+                <input type="checkbox" value="Cricket"> <b>Cricket</b>
+                <input type="checkbox" value="Football"> <b>Football</b>
+                <input type="checkbox" value="Volleyball"> <b>Volleyball</b>
+                <br>
+                <br>
+                <label for="class">Class:</label>
+                <br>
+                <br>
+                <select id="class">
+                    <option value="Class XI">Class XI</option>
+                    <option value="Class XII">Class XII</option>
+                </select>
+                <br>
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

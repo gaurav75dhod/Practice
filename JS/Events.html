@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .box{
+            margin-top: 2%;
+            height: 100px;
+            width: 100px;
+            background-color: gold;
+            border: 2px solid black;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    <br>
+    <div class="box">
+        Box
+    </div>
+    <script>
+        document.body.style.backgroundColor="Lightcyan";
+        let a = document.createElement("button");
+        a.innerHTML="<b>Click Me</b>"
+        a.style.backgroundColor="White"
+        a.style.padding="10px"
+        let b = document.querySelector("h1");
+        b.after(a);
+
+        // a.onclick= function () {
+        //     alert("You clicked me!")
+        // }
+
+        // a.ondblclick= function (){
+        //     console.log("Hii")
+        // }
+
+        // let c = document.querySelector(".box");
+        // c.onmouseover = function () {
+        //     console.log("Hii")
+        // }
+    </script>
+</body>
+</html>

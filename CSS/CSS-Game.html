@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Game</title>
+    <style>
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background-color: black;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+        }
+        .box{
+            margin: auto;
+            margin-top: 1%;
+            height: 600px;
+            width: 650px;
+            background-color: black;
+            border: 2px solid white;
+            box-shadow: white 2px 2px 2px;
+        }
+        .player{
+            height: 30px;
+            width: 30px;
+            background-color: gold;
+            border-radius: 50%;
+            transform: translateY(250px);
+            animation-name: move;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+        .box:hover .player{
+            animation-play-state: running;
+        }
+        .enemy{
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        .game{
+            display: inline-block;
+            margin: 2%;
+            margin-right: 3.5%;
+        }
+        @keyframes move{
+            50%{
+                transform: translateY(250px) translateX(590px);
+            }
+        }
+        @keyframes bounce{
+            50%{
+                transform: translateY(500px);
+            }
+        }
+        .one{
+            animation-timing-function: ease-out;
+        }
+        .two{
+            animation-timing-function: ease-in;
+        }
+        .three{
+            animation-timing-function: ease-in-out;
+        }
+        .four{
+            animation-timing-function: linear;
+        }
+        .five{
+            animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        .six{
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Game</h2>
+    <div class="box">
+        <div class="player game"></div>
+        <div class="enemy game one"></div>
+        <div class="enemy game two"></div>
+        <div class="enemy game three"></div>
+        <div class="enemy game four"></div>
+        <div class="enemy game five"></div>
+        <div class="enemy game six"></div>
+    </div>
+</body>
+</html>

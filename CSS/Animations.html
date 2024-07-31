@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Effects</title>
+    <style>
+        .large{
+            height: 600px;
+            width: 1000px;
+            border: 3px solid black;
+            box-shadow: black 2px 2px 2px;
+            background-color: hotpink;
+            margin: auto;
+            margin-top: 2.5%;
+            padding: 15px;
+            padding-bottom: 20px;
+            animation-name: large;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .medium{
+            height: 600px;
+            width: 800px;
+            background-color: gold;
+            margin: auto;
+            border: 3px solid black;
+            box-shadow: black 2px 2px 2px;
+            animation-name: medium;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .small{
+            height: 400px;
+            width: 600px;
+            background-color: lawngreen;
+            margin: auto;
+            margin-top: 12%;
+            border: 3px solid black;
+            box-shadow: black 2px 2px 2px;
+            animation-name: small;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        @keyframes large{
+            50%{
+                background-color: lawngreen;
+            }
+        }
+        @keyframes medium{
+            50%{
+                background-color: hotpink;
+            }
+        }
+        @keyframes small{
+            50%{
+                background-color: gold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="large">
+        <div class="medium">
+            <div class="small">Animations Effects</div>
+        </div>
+    </div>
+</body>
+</html>

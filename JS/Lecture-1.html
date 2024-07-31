@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Console.log</title>
+</head>
+<body>
+    <h2>Javascript Variables</h2>
+    <script>
+        console.log("MS DHONI");
+        console.log("HAPPY BIRTHDAY");
+        // Variables can be set through var, let, const
+        // var can be changed and can be used multiple names
+        var a = 20;
+        console.log(a);
+        a++
+        console.log(a);
+        var a = 22;
+        console.log(a);
+        // let can be changed but cannot be used as multiple names
+        let b = 30;
+        console.log(b);
+        b = 31;
+        console.log(b);
+        // let b = 32;
+        // console.log(b); this will show an error
+        // const cannot be changed and cannot be used as multiple names
+        const c = 40;
+        console.log(c);
+        // c = 41;
+        // console.log(c); this will show an error
+        // const c = 42;
+        // console.log(c); this will show an error
+
+        // Objects
+        let student = {
+            Name: "Rohit",
+            Age: 38,
+            Marks: 40
+        }
+        console.log(student);
+        console.log(student.Name);
+        console.log(student.Age);
+        console.log(student.Marks);
+        student.Age = student.Age + 1;
+        console.log(student.Age);
+        // If objects is named as const student then, also we can change key name
+    </script>
+</body>
+</html>

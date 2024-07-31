@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h2>Javascript Functions</h2>
+    <script>
+        // Functions - do specific task according to the inside written values
+
+        function print(){
+        console.log("Javascript");
+        }
+        print()
+
+        // //Function to print the sum of numbers by taking input from the user
+        // function sum(){
+        //     console.log("sum of two numbers:", + a+b);
+        // }
+        //     let a = Number(prompt("Enter 1st number"));
+        //     let b = Number(prompt("Enter 2nd number"));
+        // sum()
+
+        // // Function to print the whole table of number entered by the user
+        // function multiplication(){
+        //     for (let i=1; i<=10; i++) {
+        //         console.log(`${number} * ${i} = ${number*i}`);
+        //     }
+        // }
+        // let number = Number(prompt("Enter the number which generates its own table"));
+        // multiplication()
+
+        // // Function to tell how many vowels are there in a inputed string by the user
+        // function vowel(){
+        //     let count=0;
+        //     for (const i of string) {
+        //         if (i==="a" || i==="e" || i==="i" || i==="o" || i==="u") {
+        //             count = count+1;
+        //         }
+        //     } 
+        //     console.log("No. of vowels in the string:", + count)   
+        // }
+        // let string = prompt("Enter any word");
+        // vowel()
+
+        // Function to calculate the factorial of the entered number
+        function factorial(){
+            let fact= 1 ;
+            for (let i=1; i<=num; i++) {
+                fact= fact*i;
+            }
+            console.log("Factorial of the inputed number is:", + fact);
+        }
+        let num = Number(prompt("Enter the number:"))
+        factorial()
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Practice Question</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="lightgreen"
+        let a = document.createElement("button")
+        a.innerText="Click Me"
+        a.style.padding="10px"
+        a.style.fontSize="larger"
+        a.style.border="2px solid black"
+        a.style.boxShadow="2px 2px 2px black"
+        a.style.backgroundColor="white"
+        document.body.append(a)
+
+        a.addEventListener("click", function () {
+            document.body.style.backgroundColor="lightcyan"
+        })
+
+        a.ondblclick= function(){
+            document.body.style.backgroundColor="lightcoral"
+        }
+    </script>
+</body>
+</html>

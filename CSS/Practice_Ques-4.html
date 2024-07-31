@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+            margin-left: 2%;
+            margin: 2%;
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px black;
+        }
+        @media (max-width: 1000px){
+            .box{
+                background-color: gold;
+            }
+        }
+        @media (min-width: 1500px) and (max-width: 1600px){
+            .box{
+                background-color: greenyellow;
+            }
+        }
+        @media (min-width: 1800px) and (max-width: 2000px){
+            .box{
+                background-color:lightcoral;
+            }
+        }
+        @media (min-width: 2100px){
+            .box{
+                background-color: slateblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
